@@ -1,0 +1,1545 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+section{
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#home{
+    min-height: auto;
+    width: 100%;
+    background: url(/images/home-image.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(243, 231, 220);
+    font-family: 'IBM Plex Serif';
+    color: rgb(90, 62, 54);
+    padding: 0 30px;
+    font-size: large;
+}
+header img{
+    height: 60px;
+    width: 80px;
+    object-fit: contain;
+}
+header img:hover{
+    transform: scale(1.2);
+}
+header nav{
+    margin: auto;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(90, 62, 54);
+}
+header nav a:hover{
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+header nav li{
+    list-style: none;
+    gap: 50px;
+    padding: 20px;
+}
+header nav li:hover{
+    transform: scale(1.2);
+}
+header span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header span i {
+    padding: 0;
+    position: static;
+}
+header span i:hover{
+    transform: scale(1.2);
+    text-shadow: 2px 2px 5px rgb(90, 26, 56);
+}
+#btn {
+    border: none;
+    background: none;
+    color: rgb(90, 62, 54);
+}
+.hero-content{
+    margin: 80px 0 0 100px ;
+    padding: 40px 60px;
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(5px);
+    color: rgb(90, 62, 54);
+    box-shadow: 2px 2px 5px rgb(109, 67, 62);
+}
+@media (max-width: 768px) {
+    .hero-content {
+        margin: 80px 0 0 20px;
+        padding: 30px 20px;
+        width: 90%;
+    }
+}
+.hero-heading p{
+    font-family: 'Fira Sans';
+    font-size: 25px;
+}
+.hero-heading h1{
+    font-family: "IBM Plex Serif";
+    font-size: 50px;
+    color:rgb(107, 69, 64);
+}
+.cta button{
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.cta button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans';
+}
+.hero-heading h1:hover, p:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.cta button:hover{
+    transform: scale(1.1);
+}
+.cta button a:hover{
+    text-shadow: 2px 2px 5px rgb(248, 245, 247);
+}
+#about{
+    width: 100%;
+    min-height: auto;
+    background-color: rgb(248, 243, 234);
+    padding-bottom: 40px;
+}
+.about-container{
+    display: flex;
+    margin: auto;
+    padding: 30px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.about-content{
+    width: 55%;
+    padding: 20px;
+}
+.about-content h3, p{
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    color: rgb(90, 62, 54);
+    line-height: 1.5;
+}
+.about-content h2{
+    font-family: 'Lavishly Yours';
+    font-size: 50px;
+    color: rgb(107, 69, 64);
+}
+.about-content h2:hover{
+    transform: scaleY(1.1);
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.about-content p:hover{
+    transform: none;
+    text-shadow: none;
+}
+.about-image img{
+    height: 300px;
+    width: 400px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.about-image img:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+#cta2{
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#cta2 a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans';
+}
+#cta2:hover{
+    transform: scale(1.1);
+}
+#cta2 a:hover{
+    text-shadow: 2px 2px 5px rgb(248, 245, 247);
+}
+#service{
+    width: 100%;
+    min-height: auto;
+    background-color: rgb(233, 221, 210);
+    padding: 50px 0;
+}
+.service-container{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.service-heading{
+    padding-bottom: 20px;
+}
+.service-heading h3{
+    font-family: "Fira Sans";
+    font-size: 24px;
+    color: rgb(107, 69, 64);
+}
+.service-heading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 35px;
+    color: rgb(107, 69, 64);
+}
+.service-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
+}
+.service-card div{
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(250, 247, 242);
+    color: rgb(90, 62, 54);
+}
+.service-card img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: fill;
+    margin-top: -50px;
+}
+.service-card img{
+    box-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.service-card h3{
+    font-family: 'IBM Plex Serif';
+    color: rgb(107, 69, 64);
+}
+.service-heading h2:hover,
+.service-heading h3:hover,
+.service-card h3:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.service-card p{
+    transform: none;
+    text-shadow: none;
+}
+.service-card div{
+    box-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+#whychooseus{
+    width: 100%;
+    min-height: auto;
+    background-color: rgb(248, 243, 234);
+    padding-bottom: 40px;
+}
+.whychooseus-container{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.whychooseus-heading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 35px;
+    color: rgb(107, 69, 64);
+    padding: 20px;
+}
+.whychooseus-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
+}
+.whychooseus-content div{
+    border-radius: 10px;
+    width: 100%;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(90, 62, 54);
+}
+.whychooseus-content h3{
+    font-family: 'IBM Plex Serif';
+    font-size: 20px;
+    color: rgb(243, 231, 220);
+}
+.whychooseus-content p{
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    color: rgb(243, 231, 220);
+    transform: none;
+    text-shadow: none;
+}
+.whychooseus-content h3:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 8px rgb(243, 231, 220);
+}
+.whychooseus-container h2:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+#review{
+    width: 100%;
+    min-height: auto;
+    background-color: rgb(233, 221, 210);
+    padding-bottom: 40px;
+}
+.review-container{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.review-heading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 35px;
+    color: rgb(107, 69, 64);
+    padding: 20px;
+    text-align: center;
+}
+.review-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
+}
+.review-content div{
+    border-radius: 10px;
+    width: 100%;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(243, 231, 220);
+}
+.review-content h4{
+    font-family: 'IBM Plex Serif';
+    font-size: 20px;
+    color: rgb(90, 62, 54);
+}
+.review-content p{
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    color: rgb(90, 62, 54);
+}
+.star{
+    color: rgb(238, 238, 21);
+}
+.review-content h4:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 8px rgb(90, 62, 54);
+}
+.review-content p{
+    transform: none;
+    text-shadow: none;
+}
+.review-heading h2:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.star i:hover{
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+#footer{
+    width: 100%;
+    background-color: rgb(109, 67, 62);
+    color: rgb(243, 231, 220);
+}
+footer{
+    padding: 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr auto;
+    padding: 30px;
+}
+.footer-container h2{
+    font-family: 'IBM Plex Serif';
+}
+.footer-container p{
+    font-family: 'Fira Sans';
+    color: rgb(243, 231, 220);
+}
+.footer-container div ul{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.footer-container div li{
+    list-style: none;
+}
+.footer-container div a{
+    text-decoration: none;
+    color: rgb(243, 231, 220);
+    gap:20px;
+    padding: 10px;
+    font-family: 'IBM Plex Serif';
+}
+footer #para{
+    text-align: center;
+    color: rgb(243, 231, 220);
+}
+.footer-container h2:hover{
+    text-shadow: 2px 2px 5px rgb(233, 221, 210);
+    transform: scaleY(1.1);
+}
+.footer-container p:hover{
+    transform: none;
+}
+.footer-container li i:hover{
+    text-shadow: 2px 2px 5px rgb(233, 221, 210);
+    transform: scaleY(1.1);
+}
+.footer-container div a:hover{
+    text-shadow: 2px 2px 5px rgb(233, 221, 210);
+    transform: scaleY(1.1);
+}
+footer #para:hover{
+    transform: none;
+    text-shadow: 2px 2px 5px rgb(243, 231, 220);
+}
+
+/* About Page CSS */
+
+#home2{
+    min-height: auto;
+    width: 100%;
+    background: url(/images/aboutheroimagee.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+#hone{
+    font-family: 'Lavishly Yours';
+}
+.hero-heading a{
+    text-decoration: none;
+    color: rgb(109, 67, 62);
+    font-family: 'Fira Sans';
+}
+#line{
+    font-family: 'Lavishly Yours';
+    font-size: 50px;
+}
+#about1{
+    background-color: rgb(243, 231, 220);
+    width: 100%;
+    min-height: 40vh;
+    padding-bottom: 60px;
+}
+.about-container2{
+    margin: auto;
+    padding: 20px;
+}
+.about-content2 h2,
+.about-content2 h3{
+    text-align: center;
+    color: rgb(107, 69, 64);
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'IBM Plex Serif';
+}
+.about-content2 h2:hover,
+.about-content2 h3:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.1);
+}
+.whenwhy{
+    display: flex;
+    width: 100%;
+    padding: 0px 60px;
+}
+@media (max-width: 768px) {
+    .whenwhy {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .whenwhy div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.whenwhy div{
+    justify-content: center;
+    border: 5px double rgb(107, 69, 64);
+    box-shadow: 2px 2px 5px rgb(107, 69, 64);
+    padding: 20px;  
+    width: 50%;
+    margin: 20px;
+}
+.whenwhy h4{
+    text-align: center;
+    margin: 10px;
+    color: rgb(107, 69, 64);
+    font-family: 'IBM Plex Serif';
+    font-size: 24px;
+}
+.whenwhy h4:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.1);
+}
+.whenwhy p{
+    transform: none;
+    text-shadow: none;
+    text-align: justify;
+    padding: 0 20px;
+}
+.mission{
+    justify-content: center;
+    text-align: center;
+    border: 5px double rgb(107, 69, 64);
+    box-shadow: 2px 2px 5px rgb(107, 69, 64);
+    padding: 20px;  
+    width: 90%;
+    margin: auto;
+}
+.mission h4{
+    text-align: center;
+    margin: 10px;
+    color: rgb(107, 69, 64);
+    font-family: 'IBM Plex Serif';
+    font-size: 24px;
+}
+.mission h4:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.1);
+}
+.mission p:hover{
+    transform: none;
+    text-shadow: none;
+}
+#aboutt1{
+    background-color: rgb(248, 243, 234);
+    width: 100%;
+    min-height: 30vh;
+    padding-bottom: 60px;
+}
+#about2{
+    background-color: rgb(90, 62, 54);
+    width: 100%;
+    min-height: 25vh;
+    padding-bottom: 60px;
+}
+.about-team{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.about-teamheading{
+    padding: 20px;
+}
+.about-teamheading p{
+    font-family: "Fira Sans";
+    font-size: 24px;
+    color: rgb(107, 69, 64);
+}
+.about-teamheading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 35px;
+    color: rgb(107, 69, 64);
+}
+.about-teamcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
+}
+.about-teamcontent div{
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(250, 247, 242);
+    color: rgb(90, 62, 54);
+}
+.about-teamcontent img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: fill;
+    margin-top: -50px;
+}
+.about-teamcontent img{
+    box-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.about-teamcontent h4{
+    font-family: 'IBM Plex Serif';
+    color: rgb(107, 69, 64);
+    font-size: 24px;
+}
+.about-teamheading h2:hover,
+.about-teamcontent h4:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.about-teamcontent p{
+    transform: none;
+    text-shadow: none;
+    padding: 0 20px;
+    text-align: justify;
+}
+.about-teamcontent div{
+    box-shadow: 2px 2px 5px rgb(90, 62, 54);
+}
+.about-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+}
+@media (max-width: 768px) {
+    .about-detail {
+        grid-template-columns: 1fr;
+    }
+}
+.about-detail div{
+    border-right: 2px solid rgb(248, 243, 234);
+    width: 100%;
+    padding: 10px 20px;
+}
+.about-detail div h4{
+    font-size: 30px;
+}
+.about-detail div h4,
+.about-detail div p{
+    font-family: 'IBM Plex Serif';
+    color: rgb(248, 243, 234);
+    padding: 5px;
+    text-align: center;
+}
+.about-detail div h4:hover,
+.about-detail div p:hover{
+    text-shadow: 2px 2px 5px rgb(233, 221, 210);
+    transform: scaleY(1.1);
+}
+#about3{
+    background-color: rgb(243, 231, 220);
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 60px;
+}
+.about-valueheading{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+.about-valuecontent{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+    padding: 30px;
+}
+@media (max-width: 768px) {
+    .about-valuecontent {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.about-valuecontent div{
+    text-align: center;
+    padding: 20px;
+    border-right: 0.2px solid rgb(109, 67, 62);
+}
+.about-valuecontent i{
+    align-items: center;
+}
+.about-valuecontent i,
+.about-valuecontent h3,
+.about-valuecontent p{
+    margin-top: 10px;
+    color: rgb(107, 69, 64);
+}
+.about-valuecontent h3{
+    font-family: 'IBM Plex Serif';
+}
+.about-valuecontent i:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.2);
+}
+.about-valuecontent h3:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scaleY(1.1);
+}
+.about-valuecontent p{
+    transform: none;
+    text-shadow: none;
+}
+.about-valueheading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 35px;
+    color: rgb(107, 69, 64);
+}
+.about-valueheading h2:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.1);
+}
+#about4{
+    background: url(/images/about-image.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 60vh;
+    padding-bottom: 60px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    #about4 {
+        min-height: 330px;
+        padding-bottom: 0;
+    }
+}
+.about-message {
+    position: absolute;
+    background-color: rgb(233, 221, 210);
+    float: right;
+    right: 200px;
+    top: 50px;
+    width: 300px;
+    height: 250px;
+    padding: 30px;
+    border: 3px dashed rgb(107, 69, 64);
+    border-radius: 10px;
+}
+.about-message p{
+    text-align: center;
+    font-family: 'Lavishly Yours';
+    font-size: 35px;
+}
+#heart i{
+    color: rgb(107, 69, 64);
+    display: block;
+    text-align: center;
+}
+#heart i:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.2);
+}
+
+/* Service Page CSS */
+
+#home3{
+    min-height: auto;
+    width: 100%;
+    background: url(/images/serviceimage.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+#service2{
+    background-color: rgb(243, 231, 220);
+    min-height: auto;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.service-content{
+    padding: 20px 80px;
+}
+.service-contentheading{
+    height: 200px;
+    width: 60%;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+.service-contentheading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 40px;
+    color: rgb(107, 69, 64);
+    margin-bottom: 10px;
+}
+.service-contentheading h2:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.1);
+}
+.service-contentheading p{
+    line-height: 2;
+}
+.service-contentheading p:hover{
+    text-shadow: none;
+    transform: none;
+}
+.service-contentcontainer{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+.service-detail{
+    border: 7px double rgb(226, 197, 170);
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    box-shadow: 2px 2px 5px rgb(109, 67, 62);
+}
+@media (max-width: 768px) {
+    .service-detail {
+        flex-direction: column;
+    }
+
+    .service-image {
+        flex: none;
+        width: 100%;
+    }
+    .service-content {
+        padding: 20px;
+    }
+}
+.service-image {
+    flex: 0 0 250px;
+}
+.service-detail img {
+    display: block;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 1px 1px 4px rgb(107, 69, 64);
+}
+.service-info {
+    flex: 1;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.service-info h3 {
+    font-family: 'IBM Plex Serif';
+    font-size: 25px;
+    color: rgb(107, 69, 64);
+    margin-bottom: 15px;
+}
+.service-info p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.service-info button {
+    width: fit-content;
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.service-info h3:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scaleY(1.1);
+}
+.service-info p:hover{
+    transform: none;
+    text-shadow: none;
+}
+.service-info button:hover{
+    transform: scale(1.1);
+}
+#message{
+    background-color: rgb(243, 231, 220);
+    min-height: 20vh;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.service-message{
+    width: 75%;
+    min-height: 200px;
+    background-color: rgb(177, 114, 107);
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed rgb(107, 69, 64);
+}
+.service-message h4{
+    font-family: 'Lavishly Yours';
+    font-size: 40px;
+    color: rgb(233, 221, 210);
+    word-spacing: 10px;
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+}
+.service-message p{
+    color: rgb(233, 221, 210);
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: none;
+}
+.service-message button {
+    width: fit-content;
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.service-message button a{
+    color: white;
+    text-decoration: none;
+}
+.service-message button:hover{
+    transform: scale(1.1);
+}
+#service-pricing{
+    background-color: rgb(248, 243, 234);
+    min-height: auto;
+    width: 100%;
+    padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .service-pricingcontent {
+        grid-template-columns: 1fr;
+    }
+}
+.service-pricingcontainer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.service-pricingheading h2{
+    color: rgb(107, 69, 64);
+    padding-top: 20px;
+    font-size: 35px;
+    font-family: 'IBM Plex Serif';
+}
+.service-pricingheading h4{
+    color: rgb(107, 69, 64);
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'IBM Plex Serif';
+}
+.service-pricingheading p{
+    margin-top: 10px;
+}
+.service-pricingcontent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    gap: 30px;
+}
+.service-pricingcontent div{
+    border-radius: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(90, 62, 54);
+    color: rgb(248, 243, 234);
+    min-height: 300px;
+}
+.service-pricingcontent h3 {
+    font-family: 'IBM Plex Serif';
+    font-size: 25px;
+}
+.service-pricingcontent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    font-size: large;
+    font-family: 'Fira Sans';
+}
+.service-pricingcontent li::before {
+    content: "✦";
+    margin-right: 10px;
+    color: rgb(226, 197, 170);
+}
+.service-pricingcontent button{
+    width: fit-content;
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.service-pricingcontent button:hover{
+    transform: scale(1.1);
+}
+.service-pricingheading h2:hover,
+.service-pricingheading h4:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+}
+.service-pricingcontent h3:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(226, 197, 170);
+}
+
+/* Contact Page CSS*/
+
+#home4{
+    min-height: auto;
+    width: 100%;
+    background: url(/images/contactimage.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+#contact{
+    min-height: 50vh;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: rgb(248, 243, 234);
+    color: rgb(107, 69, 64);
+}
+.contact-container{
+    display: flex;
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+}
+.contact-heading{
+    width: 60%;
+    text-align: justify;
+    margin: 20px;
+}
+.contact-heading p{
+    padding-right: 50px;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 2;
+}
+.contact-heading h2{
+    font-family: 'IBM Plex Serif';
+    font-size: 30px;
+}
+.contact-heading h2:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scaleY(1.1);
+}
+.contact-heading p{
+    text-shadow: none;
+    transform: none;
+}
+.contact-heading ul{
+    list-style: none;
+    font-family: 'Fira Sans';
+    line-height: 2;
+    text-align: justify;
+    margin-top: 20px;
+}
+.contact-heading li i{
+    padding: 10px;
+}
+.contact-heading li:hover, i:hover{
+    text-shadow: 2px 2px 5px rgb(109, 67, 62);
+    transform: scaleY(1.2);
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 25px;
+}
+.contact-detail ul{
+    width: 40%;
+    margin-top: 0;
+}
+.message-card {
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(238, 220, 201);
+    border: 1px solid rgb(211, 180, 153);
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(109, 67, 62, 0.15);
+}
+.message-card h3 {
+    font-family: 'Lavishly Yours';
+    font-size: 30px;
+    color: rgb(107, 69, 64);
+    margin-bottom: 10px;
+}
+.message-card p {
+    color: rgb(107, 69, 64);
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
+}
+.contact-form{
+    margin: 20px;
+    justify-content: center;
+    width: 35%;
+    border: 2px solid rgb(187, 162, 140);
+    background-color: rgb(226, 197, 170);
+    border-radius: 3px;
+}
+.contact-form form{
+    padding: 15%;
+}
+form label{
+    font-family: 'Fira Sans';
+}
+form input{
+    border: 2px solid rgb(187, 162, 140);
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: rgb(243, 231, 220);
+}
+form textarea{
+    border: 2px solid rgb(187, 162, 140);
+    width: 100%;
+    height: 65px;
+    border-radius: 2px;
+    margin-top: 10px;
+    background-color: rgb(243, 231, 220);
+}
+form input[type=submit]{
+    width: fit-content;
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+form input[type=submit]:hover{
+    transform: scale(1.1);
+}
+form label:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgb(109, 67, 62);
+}
+#contact-map{
+    min-height: 50vh;
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(243, 231, 220);
+    color: rgb(107, 69, 64);
+}
+#contact-map h2{
+    text-align: center;
+    font-size: 30px;
+}
+#contact-map p{
+    text-align: center;
+    transform: none;
+    text-shadow: none;
+    margin: 20px;
+}
+@media (max-width: 768px) {
+    .contact-mapcontainer {
+        flex-direction: column;
+    }
+}
+.contact-mapcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin: auto;
+}
+.contactmap{
+    flex: 1;
+    width: auto;
+    margin: 0;
+    border: 2px solid rgb(226, 197, 170);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(109, 67, 62);
+    overflow: hidden;
+}
+.contactmap iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+.contactmap-image {
+    flex: 1;
+    width: auto;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid rgb(226, 197, 170);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(109, 67, 62);
+}
+.contactmap-image img {
+    display: block;
+    width: 260px;
+    height: 380px;
+    object-fit: cover;
+    margin: 0;
+    border: 2px solid rgb(226, 197, 170);
+    border-radius: 10px;
+}
+.contactmap-image h1 {
+    text-align: center;
+    font-family: 'Lavishly Yours';
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+.contactmap-image p {
+    margin: 10px;
+    text-align: center;
+}
+#heart {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#newsletter{
+    background-color: rgb(248, 243, 234);
+    min-height: 20vh;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.newslettercontent{
+    width: 90%;
+    min-height: 300px;
+    background: url(/images/newsletter.png) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+.newslettercontent h3{
+    font-family: 'Lavishly Yours';
+    font-size: 70px;
+    color: rgb(107, 69, 64);
+    word-spacing: 10px;
+}
+.newslettercontent h3:hover{
+    text-shadow: 2px 2px 5px rgb(107, 69, 64);
+    transform: scale(1.1);
+}
+.newslettercontent div{
+    text-align: justify;
+    line-height: 1.7;
+    width: 40%;
+    margin: auto;
+}
+.newslettercontent p{
+    text-shadow: none;
+    transform: none;
+}
+.newslettercontent input[type=submit] {
+    width: fit-content;
+    border: 1px solid transparent;
+    background-color: rgb(107, 69, 64);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.newslettercontent input[type=submit]:hover{
+    transform: scale(1.1);
+}
+.newslettercontent input{
+    border: 2px solid rgb(187, 162, 140);
+    width: 30%;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: rgb(243, 231, 220);
+}
+.newslettercontent input::placeholder{
+    padding: 10px;
+}
+
+
+body.dark-theme {
+    background-color: rgb(35, 29, 27);
+    color: rgb(243, 231, 220);
+}
+body.dark-theme header {
+    background-color: rgb(45, 36, 33);
+    color: rgb(243, 231, 220);
+}
+body.dark-theme header nav a {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme header nav a:hover {
+    text-shadow: 2px 2px 5px rgb(177, 114, 107);
+}
+body.dark-theme #btn {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #home {
+    background-color: rgb(35, 29, 27);
+}
+body.dark-theme .hero-content {
+    background-color: rgba(35, 29, 27, 0.75);
+    color: rgb(243, 231, 220);
+    box-shadow: 2px 2px 8px rgb(20, 17, 16);
+}
+body.dark-theme .hero-heading h1 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .hero-heading p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .cta button,
+body.dark-theme #cta2,
+body.dark-theme .service-info button,
+body.dark-theme .service-message button,
+body.dark-theme .service-pricingcontent button,
+body.dark-theme form input[type=submit],
+body.dark-theme .newslettercontent input[type=submit] {
+    background-color: rgb(177, 114, 107);
+    color: rgb(255, 248, 245);
+}
+body.dark-theme #about {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .about-content h2,
+body.dark-theme .about-content h3,
+body.dark-theme .about-content p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #service {
+    background-color: rgb(55, 43, 39);
+}
+body.dark-theme .service-heading h2,
+body.dark-theme .service-heading h3 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .service-card div {
+    background-color: rgb(45, 36, 33);
+    color: rgb(243, 231, 220);
+    box-shadow: 2px 2px 6px rgb(25, 20, 18);
+}
+body.dark-theme .service-card h3 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme #whychooseus {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .whychooseus-heading h2 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .whychooseus-content div {
+    background-color: rgb(70, 52, 47);
+}
+body.dark-theme .whychooseus-content h3,
+body.dark-theme .whychooseus-content p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #review {
+    background-color: rgb(55, 43, 39);
+}
+body.dark-theme .review-heading h2 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .review-content div {
+    background-color: rgb(70, 52, 47);
+}
+body.dark-theme .review-content h4,
+body.dark-theme .review-content p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #footer {
+    background-color: rgb(25, 20, 18);
+}
+body.dark-theme .footer-container p,
+body.dark-theme .footer-container a,
+body.dark-theme footer #para {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #about1 {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme #aboutt1 {
+    background-color: rgb(35, 29, 27);
+}
+body.dark-theme .about-content2 h2,
+body.dark-theme .about-content2 h3,
+body.dark-theme .whenwhy h4,
+body.dark-theme .mission h4 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .whenwhy div,
+body.dark-theme .mission {
+    border-color: rgb(177, 114, 107);
+    box-shadow: 2px 2px 6px rgb(20, 17, 16);
+}
+body.dark-theme .whenwhy p,
+body.dark-theme .mission p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #about2 {
+    background-color: rgb(55, 43, 39);
+}
+body.dark-theme .about-teamheading h2,
+body.dark-theme .about-teamheading p {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .about-teamcontent div {
+    background-color: rgb(70, 52, 47);
+}
+body.dark-theme .about-teamcontent h4,
+body.dark-theme .about-teamcontent p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .about-detail div {
+    border-color: rgb(177, 114, 107);
+}
+body.dark-theme .about-detail div h4,
+body.dark-theme .about-detail div p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #about3 {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .about-valueheading h2,
+body.dark-theme .about-valuecontent i,
+body.dark-theme .about-valuecontent h3,
+body.dark-theme .about-valuecontent p {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .about-valuecontent div {
+    border-color: rgb(109, 67, 62);
+}
+body.dark-theme #about4 {
+    background-color: rgb(35, 29, 27);
+}
+body.dark-theme .about-message {
+    background-color: rgb(55, 43, 39);
+    border-color: rgb(177, 114, 107);
+}
+body.dark-theme .about-message p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #heart i {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme #service2 {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .service-contentheading h2 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .service-contentheading p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .service-detail {
+    background-color: rgb(55, 43, 39);
+    border-color: rgb(177, 114, 107);
+}
+body.dark-theme .service-info h3 {
+    color: rgb(238, 205, 198);
+}
+body.dark-theme .service-info p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #message {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .service-message {
+    background-color: rgb(90, 62, 54);
+    border-color: rgb(177, 114, 107);
+}
+body.dark-theme #service-pricing {
+    background-color: rgb(35, 29, 27);
+}
+body.dark-theme .service-pricingheading h2,
+body.dark-theme .service-pricingheading h4,
+body.dark-theme .service-pricingheading p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .service-pricingcontent div {
+    background-color: rgb(70, 52, 47);
+}
+body.dark-theme #contact {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .contact-heading h2,
+body.dark-theme .contact-heading p,
+body.dark-theme .contact-heading li {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .message-card {
+    background-color: rgb(70, 52, 47);
+    border-color: rgb(177, 114, 107);
+}
+body.dark-theme .message-card h3,
+body.dark-theme .message-card p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .contact-form {
+    background-color: rgb(70, 52, 47);
+    border-color: rgb(177, 114, 107);
+}
+body.dark-theme form input,
+body.dark-theme form textarea {
+    background-color: rgb(45, 36, 33);
+    border-color: rgb(109, 67, 62);
+    color: rgb(243, 231, 220);
+}
+body.dark-theme form label {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme #contact-map {
+    background-color: rgb(35, 29, 27);
+}
+body.dark-theme #contact-map h2,
+body.dark-theme #contact-map p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .contactmap,
+body.dark-theme .contactmap-image {
+    border-color: rgb(109, 67, 62);
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme #newsletter {
+    background-color: rgb(45, 36, 33);
+}
+body.dark-theme .newslettercontent {
+    background-color: rgb(55, 43, 39);
+}
+body.dark-theme .newslettercontent h3,
+body.dark-theme .newslettercontent p {
+    color: rgb(243, 231, 220);
+}
+body.dark-theme .newslettercontent input {
+    background-color: rgb(35, 29, 27);
+    color: rgb(243, 231, 220);
+}
